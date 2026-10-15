@@ -1,0 +1,35 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Hide avatar & middle name */
+  .nav-avatar-box {
+    display: none !important;
+  }
+
+  /*Narrow space between columns */
+  #target,
+  #info {
+    padding: 30px 25px;
+  }
+
+  /* Keep certificate layout & scale image */
+  .cert-item {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .cert-entry img {
+    width: 110px;
+  }
+
+  /* scale elements */
+  .project-item {
+    gap: 15px;
+  }
+
+  .describe {
+    width: 35%;
+  }
+
+  .description {
+    width: 60%;
+  }
+}

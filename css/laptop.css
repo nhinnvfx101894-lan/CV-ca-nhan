@@ -1,0 +1,466 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  height: 300px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(173, 130, 130);
+}
+
+/* Navigation bar */
+.nav-bar {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #fff3f3;
+  border-bottom: 1px solid #fff3f3;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 30px;
+  color: rgb(137, 104, 104);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  border-left: 1px solid #fff3f3;
+  border-right: 1px solid #fff3f3;
+  margin: 0;
+}
+
+.nav-item span {
+  margin-left: 6px;
+  line-height: 1;
+}
+
+.nav-item i {
+  color: rgb(255, 181, 193);
+  font-size: 16px;
+  line-height: 1;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 233, 168, 0.258);
+  color: rgb(255, 181, 193);
+}
+
+.nav-avatar-box {
+  position: relative;
+  margin: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-img {
+  width: 113px;
+  height: 113px;
+  border-radius: 50%;
+  border: 10px solid white;
+  display: block;
+  margin-top: -30px;
+  margin-bottom: -30px;
+}
+
+/* THÔNG TIN */
+#about {
+  width: 100%;
+  line-height: 170%;
+  font-size: small;
+  background-color: rgba(255, 181, 193, 0.7);
+  padding: 0;
+}
+
+#about h2 {
+  margin: 15px 0;
+}
+
+#about i {
+  color: rgb(235, 132, 151);
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+#target {
+  padding: 50px 60px;
+}
+
+#info {
+  background-color: rgba(254, 173, 186, 0.9);
+  padding: 50px 60px;
+}
+
+/* Form Styles */
+.email-prompt {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.email-input-group {
+  display: flex;
+}
+
+.email-field {
+  border-radius: 4px 0 0 4px;
+}
+
+.email-btn {
+  border-radius: 0 4px 4px 0;
+  white-space: nowrap;
+}
+
+/* LÝ LỊCH */
+#resume {
+  max-width: 1100px;
+  margin: 50px auto;
+  line-height: 1.6;
+}
+
+.Resume-item {
+  border: 1px solid rgb(224, 224, 224);
+  padding: 24px 20px;
+  box-sizing: border-box;
+  background: #fff;
+  height: 100%;
+  position: relative;
+  transition: all 0.25s ease-in-out;
+}
+
+.Resume-item:hover {
+  border-color: rgb(255, 181, 193);
+  box-shadow: 0 4px 15px rgba(235, 132, 151, 0.2);
+}
+
+.item-title {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.Resume-item > i {
+  font-size: 32px;
+  color: rgb(235, 132, 151);
+  position: absolute;
+  top: 24px;
+  right: 20px;
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* View More Button */
+.Resume-item .btn-view-more {
+  display: none;
+  background-color: #f9f2b8;
+  color: #555555;
+  border: 1px solid #e2d99b;
+  padding: 5px 14px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.Resume-item:hover .btn-view-more,
+.Resume-item.is-open .btn-view-more {
+  display: inline-block;
+}
+
+.Resume-item .btn-view-more:hover {
+  background-color: #f3e99f;
+  color: #222222;
+}
+
+.Resume-item-info {
+  margin-top: 15px;
+}
+
+.entry {
+  margin-bottom: 22px;
+}
+
+.date {
+  font-size: small;
+  font-style: italic;
+  color: rgb(119, 119, 119);
+  margin-bottom: 6px;
+}
+
+.now {
+  background-color: rgba(254, 173, 186, 0.9);
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+
+.list {
+  font-size: small;
+}
+
+/* Hobbies */
+.hobby-list {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: small;
+  gap: 15px;
+}
+
+.hobby-item {
+  text-align: center;
+}
+
+.hobby-item i {
+  width: 40px;
+  height: 40px;
+  color: rgb(235, 132, 151);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 50%;
+  margin: 0 auto 8px auto;
+}
+
+/* Levels */
+.level-entry {
+  margin-bottom: 16px;
+}
+
+.line {
+  background: gray;
+  display: inline-block;
+  height: 5px;
+  width: 40px;
+  border-radius: 10px;
+  margin-right: 5px;
+}
+
+.fill {
+  background: rgb(255, 181, 193);
+}
+
+.fill-level-1 {
+  background: rgb(255, 181, 193);
+}
+
+/* CHỨNG CHỈ (Reference Style with Spacing and Gold Crosslines) */
+#certificates {
+  width: 100%;
+  margin: 60px auto;
+  background-color: #fff9f9;
+  padding: 80px 40px;
+}
+
+#certificates h2 {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.cert-item {
+  max-width: 1050px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  row-gap: 80px;
+  column-gap: 60px;
+}
+
+/* Middle horizontal divider line */
+.cert-item::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  border-top: 1.5px solid #d6c08d;
+  transform: translateY(-50%);
+}
+
+.cert-entry {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 20px 30px;
+  font-size: 14px;
+  position: relative;
+}
+
+/* Vertical divider between the top two certificates */
+.cert-entry:first-child::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  right: -30px;
+  border-right: 1.5px solid #d6c08d;
+}
+
+.cert-entry img {
+  width: 160px;
+  height: auto;
+  flex-shrink: 0;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.cert-info strong {
+  text-transform: uppercase;
+  font-size: 13px;
+  display: block;
+  margin-bottom: 8px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.cert-info p {
+  margin: 0;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* DỰ ÁN */
+#projects {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+#projects h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.project-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
+
+.project-entry {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  color: #555;
+  background: #fff;
+}
+
+.project-entry img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.project-name {
+  text-transform: uppercase;
+  padding: 15px;
+  border-top: 1px solid #eee;
+  font-weight: bold;
+}
+
+.project-info {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  border-top: 1px solid #eee;
+}
+
+.project-info .date {
+  font-size: small;
+  font-style: normal;
+  background-color: rgba(254, 173, 186, 0.9);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+
+.project-info i {
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+.table-item {
+  display: block;
+  padding: 10px 15px;
+  border-top: 1px solid #eee;
+  box-sizing: border-box;
+}
+
+.describe {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  font-weight: bold;
+}
+
+.description {
+  display: inline-block;
+  vertical-align: top;
+  width: 65%;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: #fff3f3;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.link {
+  color: rgb(196, 123, 135);
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link:hover {
+  color: rgb(235, 132, 151);
+}
+
+.link i {
+  font-size: 22px;
+}
+
+/* Class hide dùng để toggle hiển thị */
+.hide {
+  display: none !important;
+}
